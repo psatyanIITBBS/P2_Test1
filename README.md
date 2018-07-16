@@ -20,7 +20,7 @@ The goals / steps of this project are:
 
 [image1]: ./examples/Distribution.png "Distribution"
 [image2]: ./examples/CheckItem.png "CheckItem"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image3]: ./examples/Five.png "Five"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
@@ -67,6 +67,10 @@ For an exploratory visualization of the distribution of various kindls of signs 
 Using the "SplitClasses" function and the pandas library we can plot any item of any desired class. For example, by choosing the class number to be 0 and item number to be 111 we get the index of the item in the main training data and with this index and the "signnames.csv" file we can plot the following figure.
 
 ![alt text][image2]
+
+Then another function was written to choose and plot five random images from any given data set. The output of one sych call to this function looks something like this:
+
+![alt text][image3]
 
 ### Design and Test a Model Architecture
 
