@@ -19,7 +19,7 @@ The goals / steps of this project are:
 [//]: # (Image References)
 
 [image1]: ./examples/Distribution.png "Distribution"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
+[image2]: ./examples/CheckItem.png "CheckItem"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
@@ -58,9 +58,15 @@ I used the python, numpy and pandas library to calculate summary statistics of t
 
 #### 2. Include an exploratory visualization of the dataset.
 
+First I created a function called "SplitClass" to split any data set into its classes so that it will be easier to investigate any particular class of images if and when required.
+
 For an exploratory visualization of the distribution of various kindls of signs in the training data set, the following bar chart was prepared to visualize the distribution of all the classes from 0 through 42.
 
 ![alt text][image1]
+
+Using the "SplitClasses" function and the pandas library we can plot any item of any desired class. For example, by choosing the class number to be 0 and item number to be 111 we get the index of the item in the main training data and with this index and the "signnames.csv" file we can plot the following figure.
+
+![alt text][image2]
 
 ### Design and Test a Model Architecture
 
