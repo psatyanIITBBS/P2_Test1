@@ -21,8 +21,8 @@ The goals / steps of this project are:
 [image1]: ./examples/Distribution.png "Distribution"
 [image2]: ./examples/CheckItem.png "CheckItem"
 [image3]: ./examples/Five.png "Five"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
+[image4]: ./examples/CLAHE_effect.png "CLAHE"
+[image5]: ./examples/CLAHE_Gray_effect.png "CLAHE_Gray"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
@@ -68,29 +68,21 @@ Using the "SplitClasses" function and the pandas library we can plot any item of
 
 ![alt text][image2]
 
-Then another function was written to choose and plot five random images from any given data set. The output of one sych call to this function looks something like this:
+Then another function was written to choose and plot five random images from any given data set. The output of one such call to this function produces something like this:
 
 ![alt text][image3]
 
 ### Design and Test a Model Architecture
 
-#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. 
 
-As a first step, I decided to convert the images to grayscale because ...
+As a first step, I decided to enhance the contrast of the images through the application of CLAHE filter as Contrast Limited AHE (CLAHE) is a variant of adaptive histogram equalization in which the contrast amplification is limited, so as to reduce the problem of noise amplification. Here is an example of a traffic sign image before and after applying CLAHE filtering.
 
-Here is an example of a traffic sign image before and after grayscaling.
+![alt text][image4]
 
-![alt text][image2]
+In the next step of improvement, I changed the images into grayscale data. The images after passing through this filter is shown below:
 
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
+![alt text][image5]
 
 The difference between the original data set and the augmented data set is the following ... 
 
