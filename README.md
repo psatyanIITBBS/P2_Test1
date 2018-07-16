@@ -24,8 +24,7 @@ The goals / steps of this project are:
 [image4]: ./examples/CLAHE_effect.png "CLAHE"
 [image5]: ./examples/CLAHE_Gray_effect.png "CLAHE_Gray"
 [image6]: ./examples/Five_new.png "FiveNew"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+
 
 ## Rubric Points
 ### Here, following the provided template, I have considered the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and described how I have tried to address each point in my implementation.  
@@ -93,15 +92,18 @@ My final model consisted of the following layers:
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Convolution 5x5     	| 1x1 stride, 'Valid' padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
+| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+| Convolution 5x5     	| 1x1 stride, 'Valid' padding, outputs 10x10x16 	|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
+| Flatten	    | output 400x1      									|
+| Fully connected		| input 400, output 120        									|
+| RELU					|												|
+| Fully connected		| input 120, output 84        									|
+| RELU					|												|
+| Fully connected		| input 84, output 43        									|
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
