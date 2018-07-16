@@ -23,7 +23,7 @@ The goals / steps of this project are:
 [image3]: ./examples/Five.png "Five"
 [image4]: ./examples/CLAHE_effect.png "CLAHE"
 [image5]: ./examples/CLAHE_Gray_effect.png "CLAHE_Gray"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
+[image6]: ./examples/Five_new.png "FiveNew"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
@@ -137,39 +137,37 @@ Here are five German traffic signs that I found on the web:
 
 ![alt text][image6]
 
-The first image might be difficult to classify because ...
+The first image might be difficult to classify because the image is too bright. The second image may be difficult because it is too dark and the angle of view is also tilted. The third on may be difficult because of the perspective. The fourth one is difficult because of the motion blur and the fifth one may be difficult because of the low light condition.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here are the results of the prediction:
+Here are the results of the prediction from the model:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Turn right ahead     			| Turn right ahead 										|
+| Road work				| Road work											|
+| Wild animals crossing	      		| Wild animals crossing					 				|
+| Yield			| Yield      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess all the 5 traffic signs, which gives an accuracy of 100%. This is really surprisin in view of the accuracy on the test set being merely 91.2%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the all the images, the model is found to be quite sure that actual sign is the predicted sign (probability of almost 1.0). Actually, the other probabilities are so low that they should not even be mentioned. May be the images were quite obvious for the model to predict. The below table, for the above mentioned reasons, shows that in all the five cases the Softmax Probability of the best prediction almost reached 100%.
 
-| Probability         	|     Prediction	        					| 
+| Probability of prediction         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 100%         			| Stop sign   									| 
+| 100%     				| Turn right ahead 										|
+| 100%					| Road work											|
+| 100%	      			| Wild animals crossing					 				|
+| 100%				    | Yield      							|
 
-
-For the second image ... 
 
 ### Writeup / README
 
