@@ -84,8 +84,7 @@ In the next step of improvement, I changed the images into grayscale data. The i
 
 ![alt text][image5]
 
-The difference between the original data set and the augmented data set is the following ... 
-
+The difference between the original data set and the processed data set can be clearly seen in the above example. 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
@@ -111,10 +110,11 @@ To train the model, I used an ....
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
-My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+My final model results arere:
+
+* training set accuracy of 99.8%
+* validation set accuracy of 94% 
+* test set accuracy of 91.2%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -135,8 +135,7 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image6]
 
 The first image might be difficult to classify because ...
 
