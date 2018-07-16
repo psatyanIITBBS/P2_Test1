@@ -58,7 +58,7 @@ I used the python, numpy and pandas library to calculate summary statistics of t
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+For an exploratory visualization of the distribution of various kindls of signs in the training data set, the following bar chart was prepared to visualize the distribution of all the classes from 0 through 42.
 
 ![alt text][image1]
 
